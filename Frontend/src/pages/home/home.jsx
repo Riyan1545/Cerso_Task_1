@@ -6,7 +6,8 @@ import { useGSAP } from "@gsap/react";
 
 import YellowButton from '../../components/common/Navbar/buttons/YellowButton/YellowButton';
 
-import About from '../about/about'
+import About from '../about/about';
+import Service from '../services/service';
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -61,6 +62,8 @@ const Home = () => {
       </section>
 
       <About />
+
+      <Service />
     </div>
   )
 }
