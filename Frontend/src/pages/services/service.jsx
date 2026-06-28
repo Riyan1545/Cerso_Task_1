@@ -1,7 +1,49 @@
-import React from 'react'
-import './service.css'
+import React, { useRef } from 'react';
+import './service.css';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Service = () => {
+const serviceRef = useRef(null);
+
+  useGSAP(() => {
+
+    const tl = gsap.timeline({
+      scrollTrigger:{
+        trigger: serviceRef.current,
+        start: 'top 90%',
+        toggleActions: 'play none none none'
+      }
+
+    });
+
+    tl.from("#heading", {
+      y: -30,
+      opacity: 0,
+      duration: 0.6,
+      ease: "power3.out"
+    })
+
+      .from("#subheading", {
+        y: -50,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out"
+      }, "-=0.3")
+
+      .from("#four-coloumn-content", {
+        y: -30,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power3.out"
+      }, "-=0.4")
+
+
+  }, { scope: serviceRef });
+
   const card = [
     {
       cardicon: 'ri-macbook-line',
@@ -35,10 +77,10 @@ const Service = () => {
 
   return (
     <div id='service'>
-      <section className='service-container'>
+      <section className='service-container' ref={serviceRef}>
         <div className="top-service-headers">
-          <p>SERVICES</p>
-          <h1>Solutions That Drive Your Business Forward</h1>
+          <p id='heading'>SERVICES</p>
+          <h1 id="subheading">Solutions That Drive Your Business Forward</h1>
         </div>
         <div className="four-coloumn-content">
           
