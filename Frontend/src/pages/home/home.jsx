@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import YellowButton from '../../components/common/Navbar/buttons/YellowButton/YellowButton';
+import WhyUs from '../WhyUs/whyUs';
 
 import About from '../about/about';
 import Service from '../services/service';
@@ -63,7 +64,9 @@ const Home = () => {
 
       <About />
 
+
       <Service />
+      <WhyUs />
     </div>
   )
 }
