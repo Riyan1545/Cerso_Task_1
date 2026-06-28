@@ -1,5 +1,5 @@
 .hero-container{
-    width: 100vw;
+    max-width: 100vw;
     aspect-ratio: 16/4;
     background-image: linear-gradient(to right, var(--primary) 35%, #0d1b2e35), url('./HeroImg.jpg');
     background-position: center;
