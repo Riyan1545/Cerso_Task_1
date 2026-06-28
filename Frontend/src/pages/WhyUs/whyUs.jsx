@@ -1,7 +1,50 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './whyUs.css'
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const WhyUs = () => {
+
+    const whyRef = useRef(null);
+
+    useGSAP(() => {
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: whyRef.current,
+            start: 'top 80%',   // when the top of the section reaches 80% of the viewport
+            toggleActions: 'play none none none',
+        }
+    });
+
+    tl.from('.why-top-header', {
+        y: -60,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out'
+    })
+
+    .from('.why-card', {
+        y: -20,
+        opacity: 0,
+        stagger: 0.12,
+        duration: 0.5,
+        ease: 'power3.out',
+    }, '-=0.4')
+
+    .from('.why-card-content', {
+        x: 60,
+        opacity: 0,
+        stagger: 0.12,
+        duration: 0.8,
+        ease: 'power3.out'
+    }, '-=0.5');
+
+}, { scope: whyRef });
 
     const whyCard = [
         {
@@ -27,7 +70,7 @@ const WhyUs = () => {
     ];
     return (
         <div>
-            <section className="why-wrapper">
+            <section className="why-wrapper" ref={whyRef}>
                 <div className="why-top-header">
                     <p>WHY CHOOSE CERSO</p>
                     <h1>Your Success is our Priority</h1>
