@@ -1,0 +1,15 @@
+.yellow-button{
+    padding: 1em;
+    background-color: var(--accent-light);
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease;
+    border: 1px solid var(--accent-light);
+}
+
+.yellow-button:hover{
+    transform: translateY(-3px);
+}

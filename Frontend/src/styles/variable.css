@@ -1,0 +1,28 @@
+:root {
+  /* Brand */
+  --primary: #0D1B2E;
+  --primary-dark: #13294B;
+  --primary-light: #1B3558;
+
+  /* Accent */
+  --accent: #F4B942;
+  --accent-hover: #D99A2B;
+  --accent-light: #FFD36A;
+
+  /* Background */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-dark: #0D1B2E;
+
+  /* Text */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-light: #FFFFFF;
+
+  /* Borders */
+  --border: #E5E7EB;
+
+  /* Shadow */
+  --shadow: rgba(13, 27, 46, 0.12);
+}

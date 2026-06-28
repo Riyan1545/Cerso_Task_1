@@ -1,0 +1,49 @@
+.hero-container{
+    width: 100vw;
+    aspect-ratio: 16/4;
+    background-image: linear-gradient(to right, var(--primary) 35%, #0d1b2e35), url('./HeroImg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+
+}
+
+#cell{
+    border: 1px solid var(--accent);
+    border-radius: 0%;
+    color: var(--accent);
+    width: fit-content;
+    padding: .5em 1em;
+    border-radius: 20px;
+    font-size: .7em;
+}
+
+.hero-container-upper-col{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 4em 2em;
+    width: 25%;
+    color: var(--text-light);
+}
+
+.hero-container-upper-col h1{
+    font-size: 3.5em;
+    white-space: nowrap;
+}
+
+.hero-container-lower-col{
+    display: flex;
+    align-items: center;
+    padding: 0 0 3em 2em;
+    gap: 1em;
+}
+
+.Hero-btn-2{
+    background-color: transparent;
+    border: 1px solid var(--text-light);
+    padding: 1em;
+    color: var(--text-light);
+    border-radius: 2px;
+}
