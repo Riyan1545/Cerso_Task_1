@@ -4,7 +4,9 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import YellowButton from '../../components/common/Navbar/buttons/YellowButton/YellowButton'
+import YellowButton from '../../components/common/Navbar/buttons/YellowButton/YellowButton';
+
+import About from '../about/about'
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -57,6 +59,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <About />
     </div>
   )
 }
