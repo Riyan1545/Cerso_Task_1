@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './whyUs.css'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -8,6 +8,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const WhyUs = () => {
+
+    const [showMenu, setShowMenu] = useState(false)
 
     const whyRef = useRef(null);
 

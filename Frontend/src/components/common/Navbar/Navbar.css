@@ -70,3 +70,7 @@
     transform: scaleX(1);
     background-color: var(--accent);
 }
+
+@media (max-width: 800px) {
+    
+}

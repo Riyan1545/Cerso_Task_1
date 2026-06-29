@@ -65,6 +65,15 @@ const Navbar = () => {
                 <YellowButton />
             </div>
 
+            <div className="sideNav">
+                <a className='nav-link-a' href='#home'>Home</a>
+                <a className='nav-link-a' href='#about'>About</a>
+                <a className='nav-link-a' href='#services'>Services</a>
+                <a className='nav-link-a' href='#process'>Process</a>
+                <a className='nav-link-a' href='#testimonials'>Testimonials</a>
+                <a className='nav-link-a' href='#contact'>Contact</a>
+            </div>
+
         </header>
     );
 };
