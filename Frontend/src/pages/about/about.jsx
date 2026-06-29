@@ -19,7 +19,7 @@ const About = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".about-container",
-        start: "top 75%",
+        start: "top 10%",
         toggleActions: "play none none none"
       }
     });

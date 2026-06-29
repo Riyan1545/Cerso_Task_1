@@ -9,7 +9,11 @@ import WhyUs from '../WhyUs/whyUs';
 
 import About from '../about/about';
 import Service from '../services/service';
+<<<<<<< HEAD
 import Testimonials from '../../components/common/Navbar/testimonials/testimonials';
+=======
+import Process from '../Process/process';
+>>>>>>> 85bb39ba9877f38012202471dc31a6f0641dbec4
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -68,8 +72,12 @@ const Home = () => {
 
       <Service />
       <WhyUs />
+<<<<<<< HEAD
 
       <Testimonials />
+=======
+      <Process />
+>>>>>>> 85bb39ba9877f38012202471dc31a6f0641dbec4
     </div>
   )
 }
