@@ -9,6 +9,7 @@ import WhyUs from '../WhyUs/whyUs';
 
 import About from '../about/about';
 import Service from '../services/service';
+import Process from '../Process/process';
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -67,6 +68,7 @@ const Home = () => {
 
       <Service />
       <WhyUs />
+      <Process />
     </div>
   )
 }
